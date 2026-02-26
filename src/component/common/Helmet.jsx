@@ -9,7 +9,7 @@ class PageHelmet extends Component{
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>James Jin</title>
-                    <meta property="og:image" content="https://jamesjintech.github.io/contact/og-image.jpg"></meta>
+                    <meta property="og:image" content="https://jamesjintech.github.io/contact/og-image.jpg"/>
                     <meta name="robots" content="noindex, follow" />
                     <meta name="description" content="A remote creative agency" />
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
