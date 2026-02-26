@@ -16,14 +16,15 @@ import Testimonial from '../elements/Testimonial';
 import WhatsappIcon from '../component/Icons/whatsapp';
 import TelegramIcon from '../component/Icons/telegram';
 import GmailIcon from '../component/Icons/gmail';
+import LinkedinIcon from '../component/Icons/linkedin';
 
 const SlideList = [
     {
         textPosition: 'text-left',
         category: 'Welcome to my World',
         description: '',
-        buttonText: 'Download CV',
-        buttonLink: 'https://drive.google.com/file/d/1q0DRR295n9b1t6e7bMzT9GEFbEoSNRln/view?usp=sharing'
+        buttonText: 'Who am I?',
+        buttonLink: 'https://jamesjintech.github.io/profile'
     }
 ]
 
@@ -31,6 +32,7 @@ const SocialShare = [
     {Social: <WhatsappIcon /> , link: 'https://wa.me/14025107788'},
     {Social: <TelegramIcon /> , link: 'https://t.me/fulldev79'},
     {Social: <GmailIcon /> , link: 'mailto:james.jin.tech@gmail.com'},
+    {Social: <LinkedinIcon /> , link: 'https://www.linkedin.com/in/james-j-3868773a8/'},
 ]
 const PortfolioLanding = () => {
     let title = 'About Me',
@@ -151,8 +153,8 @@ const PortfolioLanding = () => {
                                                 {SocialShare.map((val , i) => (
                                                     <li key={i}><a className='custom' href={`${val.link}`} target="_blank" rel="noopener noreferrer">{val.Social}</a></li>
                                                 ))}
+                                                {value.buttonText ? <div className="slide-btn mt--8"><a className="btn-default btn-border btn-opacity" target="_blank" rel="noopener noreferrer" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                             </ul>
-                                            {/* {value.buttonText ? <div className="slide-btn mt--30"><a className="btn-default btn-border btn-opacity" target="_blank" rel="noopener noreferrer" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''} */}
                                         </div>
                                     </div>
                                 </div>
